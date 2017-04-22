@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gravity Simulator</title>
+
+    <link rel="stylesheet" type="text/css" href="app.css" />
+</head>
+
+<body onload="mainLoop()">
+    <h1>Newton Gravitation Simulation</h1>
+    <div id="app">
+        <canvas id="window-app"></canvas>
+    </div>
+    <div id="infos">
+        <p id="fps">Fps : </p>
+        <p id="lag">Lag : </p>
+        <p id="lagOffset">Lag : </p>
+    </div>
+
+    <script src="src/Entities.js" type="application/javascript"></script>
+    <script src="src/GravitySim.js" type="application/javascript"></script>
+</body>
+</html>

@@ -9,7 +9,7 @@ var canvas = document.getElementById("window-app");
 canvas.setAttribute("width", "500");
 canvas.setAttribute("height", "500");
 var ctx = canvas.getContext("2d");
-var sprites = [ Circle([400, 100], 5, 100), Circle([100, 100], 5, 100), Circle([200, 200], 5, 100, [ 0, 0 ]) ];
+var sprites = [ Circle([400, 100], 5, 100), Circle([100, 100], 5, 5), Circle([200, 200], 5, 5) ];
 var fps = 60,
     start = Date.now(),
     frameDuration = 1000 / fps,

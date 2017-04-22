@@ -24,7 +24,7 @@ var Circle = function (pos, radius, mass, init_v) {
     obj.computeGravitation = function (other) {
         const G = 1 /*6.67384 * Math.pow(10, -11) */;
         const distance = Math.sqrt(Math.pow(obj.pos[0] - other.pos[0], 2) + Math.pow(obj.pos[1] - other.pos[1], 2));
-        var gravitationF = G * (obj.mass * other.mass) / Math.pow(distance, 2);
+        var gravitationF = G * other.mass / Math.pow(distance, 2);
 
         if (gravitationF.toString() === "NaN")
             gravitationF = 0;
